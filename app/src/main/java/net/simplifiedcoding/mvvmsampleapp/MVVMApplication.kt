@@ -34,6 +34,9 @@ class MVVMApplication : Application(), KodeinAware {
         bind() from provider{ QuotesViewModelFactory(instance())}
 
 
+
+
+
     }
 
 }

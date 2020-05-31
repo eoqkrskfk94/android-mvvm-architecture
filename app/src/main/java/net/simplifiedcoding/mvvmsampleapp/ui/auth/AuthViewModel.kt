@@ -6,10 +6,8 @@ import kotlinx.coroutines.withContext
 import net.simplifiedcoding.mvvmsampleapp.data.db.entities.User
 import net.simplifiedcoding.mvvmsampleapp.data.repositories.UserRepository
 
-
-class AuthViewModel(
-    private val repository: UserRepository
-) : ViewModel() {
+//view model 선언
+class AuthViewModel(private val repository: UserRepository) : ViewModel() {
 
     fun getLoggedInUser() = repository.getUser()
 
